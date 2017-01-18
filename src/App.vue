@@ -4,7 +4,7 @@
         <hr>
         <div class="row">
             <servers></servers>
-            <app-server-details></app-server-details>
+            <app-server-details :activeServerId="activeServerId" @activeServerId="activeServerId = $event"></app-server-details>
         </div>
         <hr>
         <app-footer></app-footer>
@@ -26,7 +26,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>

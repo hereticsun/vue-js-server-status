@@ -1,7 +1,7 @@
 <template>
     <div class="col-xs-12 col-sm-6">
         <ul class="list-group">
-            <server v-for="server in servers" :server="server"></server>
+            <app-server v-for="server in servers" :server="server"></app-server>
         </ul>
     </div>
 </template>
@@ -21,11 +21,7 @@
             }
         },
         components: {
-            server: Server
+            appServer: Server
         }
     }
 </script>
-
-<style>
-
-</style>
